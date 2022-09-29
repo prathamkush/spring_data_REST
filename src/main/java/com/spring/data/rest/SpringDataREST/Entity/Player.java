@@ -11,24 +11,18 @@ import java.util.Date;
 public class Player {
 
     @Id
-    //@GeneratedValue
-    @Column(name="ID")
     private int ID;//auto generate id value on new row insertion
 
-    @Column(name="Name")
+
     private String name;
 
-    @Column(name="Age")
     private int age;
 
-    @Column(name="Nationality")
     private String nationality;
 
-    @Column(name="DOB")
     @JsonFormat(pattern = "YYYY-MM-DD")
     private Date dob;
 
-    @Column(name="Designation")
     private int designation;
 
     public Player(){}
